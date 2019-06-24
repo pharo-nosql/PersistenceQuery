@@ -1,0 +1,10 @@
+SmalltalkCISpec {
+  #loading : [
+      SCIMetacelloLoadSpec {
+          #baseline : 'PersistenceQuery',
+          #load : [ 'Tests' ],
+          #platforms : [ #pharo ]
+      }
+  ]
+}
+
