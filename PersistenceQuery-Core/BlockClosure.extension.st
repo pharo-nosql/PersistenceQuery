@@ -8,6 +8,6 @@ BlockClosure >> asPersistenceQuery [
 { #category : #'*PersistenceQuery-Core' }
 BlockClosure >> asPersistenceQueryFor: aSymbol [
 	^ PQQueryBuilder new 
-		generator: (PQVisitor withName: aSymbol);
+		generatorClass: (PQVisitor withName: aSymbol);
 		buildQueryFor: self
 ]

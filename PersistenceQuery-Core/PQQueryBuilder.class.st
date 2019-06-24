@@ -15,8 +15,21 @@ Class {
 		'label',
 		'generatorClass'
 	],
+	#classInstVars : [
+		'generatorClass'
+	],
 	#category : #'PersistenceQuery-Core-Building'
 }
+
+{ #category : #accessing }
+PQQueryBuilder class >> generatorClass [
+	^ generatorClass
+]
+
+{ #category : #accessing }
+PQQueryBuilder class >> generatorClass: anObject [
+	generatorClass := anObject
+]
 
 { #category : #'instance creation' }
 PQQueryBuilder class >> queryFor: aBlock [
@@ -29,13 +42,19 @@ PQQueryBuilder >> buildQueryFor: aBlock [
 ]
 
 { #category : #accessing }
-PQQueryBuilder >> generator: aClass [ 
-	generatorClass := aClass
+PQQueryBuilder >> generatorClass [
+	^ generatorClass ifNil: [ 
+		generatorClass := self class generatorClass ]
+]
+
+{ #category : #accessing }
+PQQueryBuilder >> generatorClass: anObject [
+	generatorClass := anObject
 ]
 
 { #category : #factory }
 PQQueryBuilder >> newGenerator [
-	^ generatorClass new
+	^ self generatorClass new
 ]
 
 { #category : #factory }
