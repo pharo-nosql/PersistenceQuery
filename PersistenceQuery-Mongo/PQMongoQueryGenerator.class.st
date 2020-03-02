@@ -1,7 +1,7 @@
 Class {
 	#name : #PQMongoQueryGenerator,
 	#superclass : #PQVisitor,
-	#category : #'PersistenceQuery-Core'
+	#category : #'PersistenceQuery-Mongo'
 }
 
 { #category : #accessing }

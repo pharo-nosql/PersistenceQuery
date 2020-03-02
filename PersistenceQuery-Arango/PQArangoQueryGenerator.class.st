@@ -1,7 +1,7 @@
 Class {
 	#name : #PQArangoQueryGenerator,
 	#superclass : #PQVisitor,
-	#category : #'PersistenceQuery-Core'
+	#category : #'PersistenceQuery-Arango'
 }
 
 { #category : #accessing }
