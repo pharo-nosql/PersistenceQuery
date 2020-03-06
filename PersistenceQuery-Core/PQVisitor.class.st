@@ -57,6 +57,12 @@ PQVisitor >> visitObject: anObject [
 ]
 
 { #category : #visiting }
+PQVisitor >> visitQuery: aQuery [
+
+	^ self visit: aQuery
+]
+
+{ #category : #visiting }
 PQVisitor >> visitWhereCondition: aWhereCondition [
 	^ self visitCondition: aWhereCondition 
 ]

@@ -38,7 +38,7 @@ PQQueryBuilder class >> queryFor: aBlock [
 
 { #category : #building }
 PQQueryBuilder >> buildQueryFor: aBlock [
-	^ self newGenerator visit: (aBlock value: self newQuery)
+	^ self newGenerator visitQuery: (aBlock value: self newQuery)
 ]
 
 { #category : #accessing }
