@@ -48,9 +48,9 @@ PQEJDBQueryVisitor >> visitLogicalCondition: aCondition [
 
 	^ String streamContents: [ :stream |
 		stream 
-			<< '(' << (self visit: aCondition conditions first) << ')'
+			<< (self visit: aCondition conditions first)
 			<< ' ' << aCondition ejdbLabel << ' '
-			<< '(' << (self visit: aCondition conditions second) << ')' ]
+			<< (self visit: aCondition conditions second) ]
 ]
 
 { #category : #visiting }
