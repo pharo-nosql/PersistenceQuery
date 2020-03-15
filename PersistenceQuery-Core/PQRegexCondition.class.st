@@ -7,7 +7,7 @@ Class {
 	#category : #'PersistenceQuery-Core-Nodes-Conditions'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 PQRegexCondition >> label [
 	^ '$regex'
 ]
