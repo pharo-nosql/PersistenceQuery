@@ -15,6 +15,7 @@ BaselineOfPersistenceQuery >> baseline: spec [
 				package: 'PersistenceQuery-Core';
 				package: 'PersistenceQuery-Mongo';
 				package: 'PersistenceQuery-Arango';
+				package: 'PersistenceQuery-EJDB';
 				package: 'PersistenceQuery-Tests' with: [ 
 					spec requires: #('PersistenceQuery-Core' 'Mocketry') ].
 
@@ -26,5 +27,6 @@ BaselineOfPersistenceQuery >> baseline: spec [
 				group: 'Core' with: #('PersistenceQuery-Core');
 				group: 'Tests' with: #('PersistenceQuery-Tests');
 				group: 'mongo' with: #('Core' 'PersistenceQuery-Mongo');
-				group: 'arango' with: #('Core' 'PersistenceQuery-Arango') ]. 
+				group: 'arango' with: #('Core' 'PersistenceQuery-Arango');
+				group: 'ejdb' with: #('Core' 'PersistenceQuery-EJDB')  ]. 
 ]
